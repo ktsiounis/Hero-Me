@@ -1,4 +1,4 @@
-package com.example.ntinos.herome;
+package com.example.ntinos.herome.Fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.example.ntinos.herome.Activities.MainActivity;
+import com.example.ntinos.herome.R;
 
 
 /**
@@ -86,6 +89,14 @@ public class PickPowersFragment extends Fragment implements View.OnClickListener
         turtleBtn.setOnClickListener(this);
         webBtn.setOnClickListener(this);
         strengthBtn.setOnClickListener(this);
+
+        backstoryBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                MainActivity mainActivity = (MainActivity) getActivity();
+                mainActivity.loadBackstoryScreen();
+            }
+        });
 
         backstoryBtn.setEnabled(false);
         backstoryBtn.getBackground().setAlpha(128);
