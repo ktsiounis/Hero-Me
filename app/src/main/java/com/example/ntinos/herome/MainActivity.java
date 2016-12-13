@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Main
         }
     }
 
+
     @Override
     public void onMainFragmentInteractionListener(Uri uri) {
 
