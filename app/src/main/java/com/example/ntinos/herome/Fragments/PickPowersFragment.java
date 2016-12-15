@@ -116,6 +116,7 @@ public class PickPowersFragment extends Fragment implements View.OnClickListener
     public void onClick(View v) {
         backstoryBtn.setEnabled(true);
         backstoryBtn.getBackground().setAlpha(255);
+        MainActivity mainActivity = (MainActivity) getActivity();
 
         thorBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.thors_hammer,0,0,0);
         lazerBtn.setCompoundDrawablesWithIntrinsicBounds(R.drawable.laser_vision,0,0,0);
@@ -129,16 +130,22 @@ public class PickPowersFragment extends Fragment implements View.OnClickListener
 
         if (currentBtn == thorBtn) {
             leftDrawable = R.drawable.thors_hammer;
+            mainActivity.heroe = "THOR";
         } else if (currentBtn == lazerBtn) {
             leftDrawable = R.drawable.laser_vision;
+            mainActivity.heroe = "LAZERMAN";
         } else if (currentBtn == supermanBtn) {
             leftDrawable = R.drawable.super_man_crest;
+            mainActivity.heroe = "SUPERMAN";
         } else if (currentBtn == turtleBtn) {
             leftDrawable = R.drawable.turtle_power;
+            mainActivity.heroe = "TURTLE";
         } else if (currentBtn == strengthBtn) {
             leftDrawable = R.drawable.super_strength;
+            mainActivity.heroe = "HULK";
         } else if (currentBtn == webBtn) {
             leftDrawable = R.drawable.spider_web;
+            mainActivity.heroe = "SPIDERMAN";
         }
 
         currentBtn.setCompoundDrawablesRelativeWithIntrinsicBounds(leftDrawable,0,R.drawable.item_selected,0);

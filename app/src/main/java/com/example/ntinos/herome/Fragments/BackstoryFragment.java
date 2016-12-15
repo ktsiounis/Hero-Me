@@ -7,7 +7,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.example.ntinos.herome.Activities.MainActivity;
 import com.example.ntinos.herome.R;
 
 /**
@@ -27,6 +31,7 @@ public class BackstoryFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private Button startOverBtn;
 
     private OnBackstoryFragmentInteractionListener mListener;
 
@@ -64,8 +69,56 @@ public class BackstoryFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_backstory, container, false);
+
+        MainActivity mainActivity = (MainActivity) getActivity();
+        TextView title = (TextView) view.findViewById(R.id.title);
+        TextView story = (TextView) view.findViewById(R.id.story);
+        ImageView logo = (ImageView) view.findViewById(R.id.logo);
+
+        startOverBtn = (Button)view.findViewById(R.id.startOverBtn);
+        startOverBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MainActivity mainActivity = (MainActivity) getActivity();
+                mainActivity.loadMainFragment();
+            }
+        });
+
+        if(mainActivity.heroe == "SPIDERMAN"){
+            title.setText(this.getResources().getString(R.string.spiderman));
+            story.setText(this.getResources().getString(R.string.spiderman_story));
+            logo.setImageResource(R.drawable.spider_web);
+        }
+        else if(mainActivity.heroe == "SUPERMAN") {
+            title.setText(this.getResources().getString(R.string.superman));
+            story.setText(this.getResources().getString(R.string.superman_story));
+            logo.setImageResource(R.drawable.big_superman_logo);
+        }
+        else if(mainActivity.heroe == "THOR") {
+            title.setText(this.getResources().getString(R.string.thor));
+            story.setText(this.getResources().getString(R.string.thor_story));
+            logo.setImageResource(R.drawable.thors_hammer);
+        }
+        else if(mainActivity.heroe == "TURTLE") {
+            title.setText(this.getResources().getString(R.string.turtles));
+            story.setText(this.getResources().getString(R.string.turtles_story));
+            logo.setImageResource(R.drawable.turtle_power);
+        }
+        else if(mainActivity.heroe == "LAZERMAN") {
+            title.setText(this.getResources().getString(R.string.lazer));
+            story.setText(this.getResources().getString(R.string.lazer_story));
+            logo.setImageResource(R.drawable.laser_vision);
+        }
+        else if(mainActivity.heroe == "HULK") {
+            title.setText(this.getResources().getString(R.string.hulk));
+            story.setText(this.getResources().getString(R.string.hulk_story));
+            logo.setImageResource(R.drawable.super_strength);
+        }
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_backstory, container, false);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

@@ -2,5 +2,47 @@
     <string name="app_name">Hero Me</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="spiderman">SPIDERMAN</string>
+    <string name="turtles">TURTLES</string>
+    <string name="superman">SUPERMAN</string>
+    <string name="lazer">LAZERMAN</string>
+    <string name="thor">THOR</string>
+    <string name="hulk">HULK</string>
+
+    <string name="spiderman_story">In Forest Hills, Queens, New York, high school student Peter Parker is a science-whiz orphan
+                                   living with his Uncle Ben and Aunt May. As depicted in Amazing Fantasy #15 (Aug. 1962), he is
+                                   bitten by a radioactive spider (erroneously classified as an insect in the panel) at a science
+                                   exhibit and "acquires the agility and proportionate strength of an arachnid". Along with super
+                                   strength, Parker gains the ability to adhere to walls and ceilings. Through his native knack for science,
+                                   he develops a gadget that lets him fire adhesive webbing of his own design through small, wrist-mounted barrels. </string>
+    <string name="superman_story">Superman is born on an alien world to a technologically advanced species that resembles humans.
+                                  When his world is on the verge of destruction, his father, a scientist, places his infant son alone
+                                  in a spaceship that takes him to Earth. The earliest newspaper strips name the planet "Krypton", the
+                                  baby "Kal-L", and his biological parents "Jor-L" and "Lora"; their names become "Jor-el", and "Lara"
+                                  in a 1942 spinoff novel by George Lowther. The ship lands in the American countryside, where the baby
+                                  is adopted by the Kents. </string>
+    <string name="turtles_story">The Teenage Mutant Ninja Turtles first appeared in an American comic book published by Mirage Studios
+                                 in 1984 in Dover, New Hampshire. The concept arose from a humorous drawing sketched out by Eastman during
+                                 a casual evening of brainstorming and bad television with Laird.[3] Using money from a tax refund, together
+                                 with a loan from Eastman’s uncle, the young artists self-published a single-issue comic intended to parody
+                                 four of the most popular comics of the early 1980s </string>
+    <string name="thor_story">During the events of the 2010 "Siege" storyline, Thor defends Asgard against an invasion by Norman Osborn
+                              and his Dark Avengers. Although the invasion force is ultimately defeated, Asgard itself is toppled by the
+                              Sentry, who also kills Loki. Thor then kills the Sentry. Subsequently, the Superhuman Registration Act is
+                              repealed and Thor joins the rebranded Avengers, who had come to his aid during the battle.The next day Balder
+                              lifts Thor\s exile and appoints Thor as his adviser. </string>
+    <string name="hulk_story">During the experimental detonation of a gamma bomb, scientist Bruce Banner saves teenager Rick Jones who has
+                              driven onto the testing field; Banner pushes Jones into a trench to save him, but is hit with the blast, absorbing
+                              massive amounts of gamma radiation. He awakens later seemingly unscathed, but that night transforms into a lumbering
+                              grey form. A pursuing soldier dubs the creature a "hulk". Originally, Banner transformed into the Hulk at sunset
+                              and reverted at sunrise. Banner was cured in The Incredible Hulk #4, but chose to restore Hulk\s powers with Banner\s
+                              intelligence. </string>
+    <string name="lazer_story">Cyclops first appeared in X-Men #1 (September 1963). He was created by Stan Lee and Jack Kirby, and has
+                               been a mainstay character of the X-Men series. Lee said that Cyclops and the Beast were his two favorite
+                               X-Men, elaborating that "I love tortured heroes - and he was tortured because he couldn\t control his power.
+                               "Originally dubbed Slim Summers, by X-Men #3 his name was changed to Scott, with \Slim\ becoming a nickname.
+                               [citation needed] Scott is the first of the X-Men recruited by Professor X; Xavier hand-picks Scott to lead
+                                his X-Men, and to carry on the legacy of his mutant-human-harmony ideals. </string>
+
+
 </resources>

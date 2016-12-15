@@ -12,6 +12,8 @@ import com.example.ntinos.herome.Fragments.PickPowersFragment;
 import com.example.ntinos.herome.R;
 
 public class MainActivity extends AppCompatActivity implements MainFragment.MainFragmentInteractionListener, PickPowersFragment.OnPickPowersFragmentInteractionListener, BackstoryFragment.OnBackstoryFragmentInteractionListener {
+    public String heroe;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,11 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Main
     public  void loadBackstoryScreen(){
         BackstoryFragment backstoryFragment = new BackstoryFragment();
         this.getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, backstoryFragment).addToBackStack(null).commit();
+    }
+
+    public void loadMainFragment(){
+        MainFragment mainFragment = new MainFragment();
+        this.getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, mainFragment).addToBackStack(null).commit();
     }
 
     @Override
